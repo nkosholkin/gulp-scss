@@ -1,0 +1,14 @@
+@mixin tooltip($type) {
+  @if $type == 'success' {
+      background-color: green;
+      color: white;
+  }
+  @else if $type == 'error'{
+      background-color: red;
+      color: white;
+  }
+  @else {
+      border: 1px solid black;
+      color: black;
+  }
+}

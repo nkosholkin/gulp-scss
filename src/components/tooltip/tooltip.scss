@@ -1,0 +1,15 @@
+@import '../../mixins/tooltip';
+
+.tooltip {
+  padding: 20px 40px;
+    max-inline-size: 600px;
+    border-radius: 8px;
+    @include tooltip('common');
+
+    &_type_success {
+        @include tooltip('success');
+    }
+    &_type_error {
+        @include tooltip('error');
+    }
+}
